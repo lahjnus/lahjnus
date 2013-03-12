@@ -1,0 +1,465 @@
+@charset "windows-1251"; 
+
+/* CSS Reset by Yahoo for consistent cross browser positioning - http://developer.yahoo.com/yui/reset/ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	padding: 0;
+	margin: 0;
+	}
+span
+	{
+	padding:3px;
+	}	
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-style:none;
+	}
+fieldset ,img{ 
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ol,ul {
+	list-style: none;
+	}
+caption,th {
+	text-align: left;
+	}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+q:before,q:after {
+	content:'';
+	}
+abbr,acronym { border: 0;
+	}
+/* end */
+
+a {
+	text-decoration:none;
+	font-family: /*Franklin gothic book,*/ Verdana, Arial, Helvetica, sans-serif;
+	/*font-size: 13px;*/
+	font-weight: bold;
+	color: black;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:visited {
+	color:#666;
+}
+body {
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	font-family: Verdana, Tahoma;
+	font-size: 13px;
+	color: #000;
+}
+
+/* Positioning of the main common.master page divs */
+.centerlayout #container {
+	/* width: 885px;  */
+	background: #FFF;
+	margin: 0;
+	text-align: left; 
+}
+
+.centerlayout #maincontent {
+	margin: 0 0 0 200px;
+	width:885px;
+	overflow:visible;	
+	margin:0 auto;
+}
+#header {
+	background-color:#ECECEC;
+	height:80px;
+}
+#bottom {
+	height: 32px;
+	background: #ECECEC;
+	color: gray;
+	text-align:center;
+	margin-top:20px;
+}
+.npbannerslot {
+	width:885px;
+	margin:0 auto;
+}
+/* top login area */
+.logo {
+	float:left;
+	margin:0;	
+}
+.cart {
+	float: right;
+	margin: 15px 0 15px 15px;
+}
+.loginblock {
+	float: right;
+	margin: 15px 0 15px 15px;
+	text-align:center;
+	white-space:nowrap;
+}
+.loginblock #verticalbar {
+	float:right;
+	height:100px;
+	width:1px;
+	border-style:none dotted none none;
+	border-color:#808080;
+	border-width:1px;
+}
+ 
+/* Item detail page layout */
+.itemcontainer { 
+
+	background: #FFFFFF;
+	margin: 0 auto; 
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.itemheader { 
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.itemheader #name {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	font-size: 2em;
+	font-weight: bold;
+}
+.itemsidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.itemsidebar1 h3, #itemsidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+.itemmainContent {
+  	margin: 0 13em 0 10px; /* the left margin will look best if you match the padding amount to the header and footer. */
+} 
+.itemfooter { 
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+} 
+.itemfooter p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.itemfltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.itemfltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.ItemPrice {
+	font-size:14px;
+	font-weight:800;
+}
+
+/* Specials Page */
+.specials td {
+	padding: 5px;
+}
+.specials #imagelink {
+	padding: 3px;
+}
+.specials #link {
+	padding: 3px;
+	font-size:12px;
+	font-weight:600;
+}
+.specials #price {
+	padding: 3px;
+}
+/* default system file styles */
+.npwarning
+{
+    COLOR: #8B0000;
+    font: 700 9px Tahoma;
+}
+.npheader 
+{
+    padding: 10px;
+	font-size:12px;
+	font-weight:800;
+}
+.npheader td
+{
+
+}
+.npsubheader th {
+	text-align:left;
+	color:#FFDC00;
+	background-color:#000;
+	font-weight: bold;
+	padding:4px;
+}
+td.npsubheader {
+	font-weight: 900;
+	font-size: 1.4em;
+	padding: 10px 0;
+	height:30px;
+}
+.npbody th {
+	padding: 5px;	
+}
+.npbody li {
+	list-style:none;
+}
+.npbody td {
+
+}
+.nptable {
+
+
+}
+.npbody {
+	padding: 8px;
+	border-style:none;
+	border-width: 0px;
+	border-color:#FFF;
+}
+.nptable {
+}
+.nptable td {
+	padding: 5px;
+}
+
+
+tr.npbody, tr.npbodyalt {
+	border:none;
+	/*
+	border-bottom:1px solid #CCC;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	*/
+	
+}
+
+#ctl00_ctl00_mainslot_totalslot_expenses_sysgrid {
+	/* border-top:1px solid #CCC; */
+	
+}
+
+
+
+
+label {
+	padding: 5px;
+}
+/*quick order table */
+.QOTable td
+{
+    padding: 3px;
+}
+/* Cart page alternating row */
+.npbodyalt 
+{
+}
+/* categories on customer service page */
+#ctl00_ctl00_mainslot_mainslot_gvTypes {
+	background-color:#CCC;
+	font-size:12px;
+}
+/* order expenses on cart.aspx */
+#ctl00_ctl00_mainslot_totalslot_expenses_sysgrid_NOTUSED {
+	border-style:dotted;
+	border-width:1px;
+	border-color:#CCC;
+}
+
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+/* tabs on partdetail */
+/* root element for tabs  */
+ul.css-tabs {  
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	 	
+}
+
+/* single tab */
+ul.css-tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a { 
+	float:left;
+	font-size:13px;
+	display:block;
+	padding:5px 30px;	
+	text-decoration:none;
+	border:1px solid #666;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#efefef;
+	color:#777;
+	margin-right:2px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright:4px;
+	position:relative;
+	top:1px;	
+}
+
+ul.css-tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+ul.css-tabs a.current {
+	background-color:#ddd;
+	border-bottom:2px solid #ddd;	
+	color:#000;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+div.css-panes > div {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	padding:15px 20px;
+	background-color:#fff;	
+}
+.nphighlight {
+        background-color:#ffff00;
+}
+
+.volumeDiscountList {
+    white-space:nowrap;
+}
+
+/*Checkout*/
+#tblNew td {
+    padding: 5px;
+}
+
+#tblOrder td {
+    padding: 5px;
+}
+
+
+
+/*** New stuff ***/
+
+/* Hardstyle */
+#ctl00_ctl00_mainslot_newuserslot_pnlCreateAccount {
+	border-right:1px solid #CCC;
+}
+
+#ctl00_ctl00_mainslot_mainslot_expenses_sysgrid {
+	width:100%;
+}
+
+#cart-links td {
+	padding:10px;
+}
+
+
+h2 {
+	font-weight: 900;
+	font-size: 1.4em;
+padding: 10px 0;
+}
+
+
+.address label:first-line {
+	font-weight:bold;
+}
+
+
+table, td, th {
+	border:none;
+}
+tr.npbody,tr.npbodyalt {
+	border:1px solid #CCC;
+}
+
+td {
+	padding: 2px 5px;
+}
+
+
+/* Form stuffs */
+.formy label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 150px; 
+	padding: 0; 
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+.formy input, .formy textarea, .formy select {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+
+}
+.formy div span {
+	/*float:right;*/
+}
+.formy fieldset {
+	margin: 10px 0;
+	padding: 10px;
+	border: #DDD 1px solid;
+
+
+  -moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+}
+.formy legend {
+	font-weight: bold;
+	color: #666;
+	padding: 0 6px;
+}
+
+legend.address {
+	padding-left:25px;
+	background: transparent url('/assets/common/icons/addresses.gif') no-repeat 5px 0;
+}
+legend.delivery {
+	padding-left:30px;
+	background: transparent url('/assets/common/icons/delivery.gif') no-repeat 5px 0;
+}
+
+legend.payment {
+	padding-left:30px;
+	background: transparent url('/assets/common/icons/transactions.gif') no-repeat 5px 0;
+}
+legend.account {
+	padding-left:30px;
+	background: transparent url('/assets/common/icons/accountprofile.gif') no-repeat 5px 0;
+}
+legend.phone {
+	padding-left:25px;
+	background: transparent url('/assets/common/icons/phone.gif') no-repeat 5px 0;
+}
+legend.message {
+	padding-left:25px;
+	background: transparent url('/assets/common/icons/message.gif') no-repeat 5px 0;
+}
+legend.summary {
+	padding-left:25px;
+	background: transparent url('/assets/common/icons/summary.gif') no-repeat 5px 0;
+}

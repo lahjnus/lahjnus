@@ -1,0 +1,411 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head1"><script src="http://localhost/scripts/jQuery%20Tools/jquery.tools.min_1_1_2.js"></script>
+<link type="text/css" rel="stylesheet" href="test.csss" /><title>
+
+</title></head>
+<body class="centerlayout">
+<form method="post" action="/commerce/verify.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__COMPRESSEDVIEWSTATE" id="__COMPRESSEDVIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script language="javascript">
+function onChange_mainslot_mainslot_dtRequestedShipDate_Picker1(picker){
+   mainslot_mainslot_dtRequestedShipDate_Calendar1.SetSelectedDate(picker.GetSelectedDate());
+}
+function onChange_mainslot_mainslot_dtRequestedShipDate_Calendar1(calendar){
+   mainslot_mainslot_dtRequestedShipDate_Picker1.SetSelectedDate(calendar.GetSelectedDate());
+}
+</script>
+<script language='javascript' src='/scripts/MultiLineTextBoxValidator.js'></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwL+raDpAgKJ8NjpCwK3uM/7CQK0uIP4CQK61+WVBQK5iLmRBQKm5LOGCjHXHaKJFhspp4Z4roV4iFnmQzO8dfCyKhBPPfLAzOjw" />
+</div>
+<div id="container">
+  <div id="header">
+  	<div class="npbannerslot"><div class="logo"><a href="http://www.tentipi.com/"><img src="/assets/common/themes/tentipi//images/logo.gif" alt="Tenitipi"></a></div>
+<div class="cart">
+<table>
+<tr><td>Cart Total:</td>
+<td><span id="bannerslot_ctl02_txtGrandTotal">8.695,00 kr</span></td>
+</tr>
+<tr>
+<td colspan="2" align="right"><a id="bannerslot_ctl02_lnkCheckOut" title="Proceed to Checkout" href="cart.aspx"><img title="Proceed to Checkout" src="/assets/common/icons/cart.gif" alt="" /></a></td>
+</tr>
+</table></div>
+<div class="loginblock">
+<div id="bannerslot_ctl03_MyAccountPanel">
+	
+Welcome back,&nbsp;<b>manager</b><br />
+<a id="bannerslot_ctl03_lnkAccount" href="../common/accounts/myaccount.aspx">Your Account</a>&nbsp;|&nbsp;<a id="bannerslot_ctl03_btnLogOff" href="javascript:__doPostBack(&#39;ctl00$ctl00$bannerslot$ctl03$btnLogOff&#39;,&#39;&#39;)">Log Off</a>
+
+</div>
+
+
+</div>
+<br class="clearfloat">
+</div>
+  	
+    
+
+  	
+  </div>
+  <!--
+  <div id="sidebar1">
+  	
+  </div>
+  -->
+  <div id="maincontent">
+  	
+    
+<script type="text/javascript">
+    function selectProduct(param) {
+        clbackTotals.callback(param);
+    }
+</script>
+
+<div style="text-align:center;">
+        <img id="mainslot_mainslot_topimage" src="/assets/common/images/checkout3.gif" /><br />
+		<span id="mainslot_mainslot_sysErrorMessage" class="npwarning"></span>
+</div>
+<div class="formy">
+	<div style="float:left;width:49%;">
+		<fieldset>
+			<legend class="delivery">Shipping To</legend>
+		<div>
+			<a id="mainslot_mainslot_syslinksa" href="shipping.aspx">Tentipi Test <br>***  Tentipi Test ***<br>C/O Testsson<br>Provgatan 456<br>111111 TIPITOWN<br>SWEDEN</a>
+		</div>
+		</fieldset>
+	</div>
+	
+	<div style="float:right;width:49%;">
+		<fieldset>
+			<legend class="address">Billing To</legend>
+			<div>
+				<a id="mainslot_mainslot_syslinkba" href="billing.aspx">Development<br>*** Test ***<br>C/O Testsson<br>Teststreet 123<br>12345 TESTTOWN<br>SWEDEN</a>
+			</div>
+		
+		</fieldset>
+	</div>
+    <table cellspacing="0" cellpadding="3" width="100%" border="0">
+
+ 
+        
+    </table>
+	
+	
+    <br />
+    <div>
+	<table class="nptable" cellspacing="0" id="mainslot_mainslot_CartList_gridOrderDetail" style="width:100%;border-collapse:collapse;">
+		<tr class="npsubheader">
+			<th scope="col">Antal</th><th scope="col">&nbsp;</th><th scope="col">Beskrivning</th><th scope="col">&nbsp;</th><th scope="col">Pris</th><th scope="col">Totalt</th><th scope="col">&nbsp;</th>
+		</tr><tr class="npbody">
+			<td>
+				
+				<span id="mainslot_mainslot_CartList_gridOrderDetail_lblQuantity_0">1</span>
+				
+				
+			</td><td>
+				<a id="mainslot_mainslot_CartList_gridOrderDetail_lnkThumb_0" href="../catalog/partdetail.aspx?PartNo=10450&amp;orderdetailid=132011"><img src="/common/controls/thumbnail.ashx?size=50&amp;image=/assets/catalog/parts/safir_5_light.jpg" alt="" /></a>
+			</td><td>
+                <a id="mainslot_mainslot_CartList_gridOrderDetail_partDesc_0_sysPartNo_0" href="../catalog/partdetail.aspx?PartNo=10450&amp;orderdetailid=132011">10450</a>&nbsp;-&nbsp;
+<b><span id="mainslot_mainslot_CartList_gridOrderDetail_partDesc_0_sysPartName_0">Safir 5 lätt</span></b>
+
+<span id="mainslot_mainslot_CartList_gridOrderDetail_partDesc_0_sysChildren_0" class="npbody"></span>
+
+
+				<br>
+				
+				
+			</td><td>
+				<img id="mainslot_mainslot_CartList_gridOrderDetail_imgOutOfStock_0" src="../assets/common/icons/warning.gif" />
+								
+				
+			</td><td>
+				8.320,00&nbsp;&nbsp;SEK
+				
+				
+				
+				
+				
+				
+		</td><td align="right">
+				
+
+<!--
+            
+			
+		
+            
+            
+-->
+            
+            8.320,00&nbsp;&nbsp;SEK
+
+
+			</td><td>
+				
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<span id="mainslot_mainslot_CartList_sysErr" class="npwarning"></span>
+<!--
+<div id="mainslot_mainslot_CartList_pnl">
+	
+	
+<table id="Table1" cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tr>
+        <td class="npadminheader"></td>
+        <td class="npadminheader"></td>
+    </tr>
+    <tr>
+        <td valign="top">
+            
+            </td>
+        <td valign="top">
+            <div>
+
+	</div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <br />
+            <span id="mainslot_mainslot_CartList_discount_sysError" class="npwarning"></span></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+</div>
+-->
+
+
+
+
+    <br />
+	
+	
+	
+<div style="float:left;width:49%;">
+    <fieldset>
+		<legend class="delivery">Delivery Provider</legend>
+			<div>
+                <table id="mainslot_mainslot_rblShipMethod" class="npbody" cellspacing="0" cellpadding="2" style="border-collapse:collapse;">
+	<tr>
+		<td><input id="mainslot_mainslot_rblShipMethod_0" type="radio" name="ctl00$ctl00$mainslot$mainslot$rblShipMethod" value="3" checked="checked" onclick="selectProduct(&#39;3&#39;);" /><label for="mainslot_mainslot_rblShipMethod_0">DHL Europack </label></td>
+	</tr><tr>
+		<td><input id="mainslot_mainslot_rblShipMethod_1" type="radio" name="ctl00$ctl00$mainslot$mainslot$rblShipMethod" value="21" onclick="selectProduct(&#39;21&#39;);" /><label for="mainslot_mainslot_rblShipMethod_1">Posten Postpaket </label></td>
+	</tr>
+</table>
+			</div>           
+    </fieldset>
+	
+ <div id="mainslot_mainslot_pnlOrderNotes">
+	
+
+		<fieldset>
+			<legend class="message"><span id="mainslot_mainslot_lblNotes">Notes:</span></legend>
+			<div>
+				<textarea name="ctl00$ctl00$mainslot$mainslot$txtNotes" rows="4" cols="45" id="mainslot_mainslot_txtNotes" onkeypress="return isMaxLength(mainslot_mainslot_txtNotes,150, event);" onblur="return isMaxLength(mainslot_mainslot_txtNotes,150, event, true);" style="height:75px;">
+</textarea>
+				
+			</div>
+		</fieldset>
+
+	
+</div>
+ 
+
+</div>
+		 
+<script src="/WebResource.axd?d=bSEY8imZgrMbn00GhGS2sv6vm3MtG-GgKheILS-fv4AGHNQKP0Mqhf5KLHqu_wnhix5jlpAb5G7pZ2lWvKWwZclzZYdA-TUMTefm7Tc9L1A38jA8GfnfIncTOB2qdOMQv4no3eQ02YZUudDc5H9G7LDUYQYu-sNek2vl3Ys3AUc1&amp;t=634457116460000000" type="text/javascript"></script><script src="/WebResource.axd?d=TX3CmA5wdwQPxob8EkconTb_NS2ZVA275vBxERlHz3gT7tAIQCKAzyCG47KpdFpddhAGklvZdhY3pbHAx8qVmyY4F0Ztl3obyM0IxZJhErqf9BsbhuIxEDl85hgyFVZWUCyP0uszZD1itAS5fWbQx8UN8yk7xCEpCCZ6PtQE2jJhjVw5NQChJkYox1g4eiuq0&amp;t=634457116460000000" type="text/javascript"></script><input id="ctl00_ctl00_mainslot_mainslot_clbackTotals_ParamField" name="ctl00_ctl00_mainslot_mainslot_clbackTotals_ParamField" type="hidden" value="" /><div id="ctl00_ctl00_mainslot_mainslot_clbackTotals" class="CallBack" style="">
+	
+	<div>
+
+	<div style="float:right;width:49%;">
+	<fieldset>
+
+		<legend class="payment">Payments</legend>
+		
+		
+                <div>
+<table cellspacing="0" cellpadding="3" id="mainslot_mainslot_gvPayments" style="border-style:None;border-collapse:collapse;">
+<tr>
+<td><a href="billing.aspx">Credit Card</a></td><td>&nbsp;</td><td>
+                                8.695,00&nbsp;&nbsp;SEK
+                            </td>
+</tr>
+</table>
+</div>
+                
+		</fieldset>
+		
+		
+		
+	</div>	
+		<div style="float:right;width:49%;">
+			
+					<fieldset>
+						<legend class="summary">Expenses</legend>
+					<div>
+<table cellspacing="0" rules="all" border="0" border="1" id="mainslot_mainslot_expenses_sysgrid" style="border-collapse:collapse;">
+<tr>
+<td>
+                Item(s) Total
+            </td><td align="right">
+                <b>8.320,00&nbsp;&nbsp;SEK</b>
+            </td>
+</tr><tr>
+<td>
+                Shipping
+            </td><td align="right">
+                <b>300,00&nbsp;&nbsp;SEK</b>
+            </td>
+</tr><tr>
+<td>
+                Tax
+            </td><td align="right">
+                <b>75,00&nbsp;&nbsp;SEK</b>
+            </td>
+</tr><tr>
+<td>
+                <b>Prel. ordertotal</b>
+            </td><td align="right">
+                <b>8.695,00&nbsp;&nbsp;SEK</b>
+            </td>
+</tr>
+</table>
+</div>
+
+
+
+                        
+					</fieldset>	
+					
+					<div style="padding:10px 10px;">
+		
+                <img id="mainslot_mainslot_imgOutOfStock" src="../assets/common/icons/warning.gif" /><span id="mainslot_mainslot_lblRealError" class="npwarning"></span><span id="mainslot_mainslot_lblOutOfStock" class="npwarning">Some parts in your order are on back order</span><br /><br />
+                <br /><br />
+                
+					</div> 
+					
+                    
+					<div style="text-align:right;">
+                    <div id="mainslot_mainslot_pnlButton">
+
+                        <input type="image" name="ctl00$ctl00$mainslot$mainslot$btnOrder" id="mainslot_mainslot_btnOrder" title="Order" src="/assets/common/buttons/placeyourorder.gif" />
+                                    
+                    
+</div>
+					</div>
+            </div>
+			
+			<div style="clear:both;"></div>
+		</div>
+    
+    </div><script type="text/javascript">
+//<![CDATA[
+/*** ComponentArt.Web.UI.CallBack 2009_1_2002_3 ctl00_ctl00_mainslot_mainslot_clbackTotals ***/
+window.ComponentArt_Init_ctl00_ctl00_mainslot_mainslot_clbackTotals = function() {
+if(!window.ComponentArt_CallBack_Loaded)
+	{setTimeout('ComponentArt_Init_ctl00_ctl00_mainslot_mainslot_clbackTotals()', 50); return; }
+
+window.ctl00_ctl00_mainslot_mainslot_clbackTotals = new ComponentArt_CallBack('ctl00_ctl00_mainslot_mainslot_clbackTotals');
+if(!window['clbackTotals']) { window['clbackTotals'] = window.ctl00_ctl00_mainslot_mainslot_clbackTotals; ctl00_ctl00_mainslot_mainslot_clbackTotals.GlobalAlias = 'clbackTotals'; }
+ctl00_ctl00_mainslot_mainslot_clbackTotals.CallbackPrefix = 'http://localhost/commerce/verify.aspx';
+ctl00_ctl00_mainslot_mainslot_clbackTotals.CallbackParamDelimiter = '?';
+ctl00_ctl00_mainslot_mainslot_clbackTotals.ClientEvents = null;
+ctl00_ctl00_mainslot_mainslot_clbackTotals.LoadingPanelClientTemplate = '          <table width="428" height="228" cellspacing="0" cellpadding="0" border="0">          <tr>            <td align="center">            <table cellspacing="0" cellpadding="0" border="0">            <tr>              <td style="font-size:10px;">Refreshing Rate Information...&nbsp;</td>              <td> ';
+ctl00_ctl00_mainslot_mainslot_clbackTotals.LoadingPanelFadeDuration = 0;
+ctl00_ctl00_mainslot_mainslot_clbackTotals.LoadingPanelFadeMaximumOpacity = 100;
+ctl00_ctl00_mainslot_mainslot_clbackTotals.Parameter = '';
+ctl00_ctl00_mainslot_mainslot_clbackTotals.Postback = function() { __doPostBack('ctl00$ctl00$mainslot$mainslot$clbackTotals','') };
+ctl00_ctl00_mainslot_mainslot_clbackTotals.Initialize();
+
+}
+ComponentArt_Init_ctl00_ctl00_mainslot_mainslot_clbackTotals();
+
+//]]>
+</script>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</div>
+ 
+ 
+
+
+  </div>
+  <div id="bottom">
+  	
+  	
+  	<script type="text/javascript">
+/* Add later */
+</script><script language="javascript">
+function SearchIt(){
+var obj = document.getElementById('search'); 
+document.location='http://localhost/catalog/search.aspx?keywords='+escape(obj.value);
+}
+function cleartext(){
+document.aspnetForm.search.value="";
+}
+//tabs 
+$(function() {
+	// :first selector is optional if you have only one tabs on the page
+	$("ul.css-tabs:first").tabs("div.css-panes:first > div");
+});
+</script><div style="font-size: 0.8em;padding-top: 5px;">Copyright © 1989-2011 Tentipi AB. All rights reserved.</div>
+  </div>
+  <div id="right">
+  	<div class="nprightslot">PageRedirect_newbasic</div>
+  </div>
+  
+  <br class="clearfloat" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+window.ComponentArt_Page_Loaded = true;
+//]]>
+</script></form>
+</body>
+</html>

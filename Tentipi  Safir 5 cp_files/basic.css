@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+body {
+	margin:0px; 
+	padding:0px; 
+	font-family: Franklin gothic book, Arial, Helvetica, sans-serif;	/*Påverkar all text i sajten, men kan köras över på fältnivå eller fält/sidtyp/areanivå*/
+	font-size:13px;
+	}
+
+
+/***** BASIC STRUCTURE FORMATTING *****/
+#doc3 { 
+	margin:auto 0px 
+	}
+#doc {
+	margin-bottom: 32px; 			/*Inget händer när värdena justeras*/
+	height:100%; 
+	}
+#ft { 								/*Sitfotsinställningar - sidfotens alla tre delar*/
+	height:32px; 
+	/*margin-top:-32px; */
+	background:#ECECEC;
+	}
+#hd { 							/*Sidhuvudet*/
+	height:80px; 
+	background: #ECECEC;
+	position:absolute; *position:relative; 
+	width:100%;
+	z-index:999;
+	top:0;
+	}
+#custom-doc, #hd-content, #ft-doc {
+	margin:auto; 
+	text-align:left; 					/* leave unchanged */
+	width:885px					/*68.23em*/;/* non-IE */
+	*width:885px;					/*69.23em; /* IE */
+	min-width:887px;				/* optional but recommended */
+	}		
+#hd-content, #ft { 
+	color: gray;					/*anger sidfots och huvuds textfärg*/
+	}
+#ft span { 
+	font-size:0.8em; 				/*Sidfotens textstorlek*/
+	}
+#bd {
+	padding-top:80px; 				/*Ska ha samma höjd som sidhuvudet eftersom det knuffar ner resten av sidan till under sidhuvudet*/
+	*padding-top:0px;
+	text-align: left;
+	}
+#ft { 
+	padding-top:0.4em; 				/*Höjd ovanför sidfotens text*/
+	clear:both;
+	}
+
+/*****OMRÅDESINSTÄLLNINGAR*****/
+#rightContent, #ft-right {
+	width: 165px;					/*12.6923em; */
+	float:right;
+	}
+#mainContent, #ft-center { 
+	width: 525px; 	
+	margin-right:15px				/*1.2307em*/; 
+	margin-bottom:2.5em; 
+	*margin-bottom: 0;
+	}
+#mainContent{float: left;}
+#ft-center {float:right; }
+#leftContent, #ft-left { 
+	width: 165px; 
+	float:left; 
+	margin-right:15px; 
+	margin-top: -5px;
+	}
+#topContent { 
+	float:right; 
+	margin-top:23px; 
+	}
+#logotype { 
+	float:left; 
+	}
+#mainGridContainer { 
+	margin-top:33px; 
+	width: 887px;
+	}
+#menu { 
+	margin-bottom:3em; 
+	}
+#leftContent #menu{
+	overflow:hidden;		/** vissa varjä menuval i en råd **/
+	white-space:nowrap;
+	width: 165px;
+	}
+/***** MENU FORMATTING *****/
+.menu_lvl1, .menu_lvl2, .menu_lvl3, .menu_lvl4, 
+.menu_lvl5, .menu_lvl6, .menu_lvl7 {
+	list-style:none;
+	padding:0px;
+	}
+.menuWhite ul{
+	background-color: #fff;
+	}
+.menuGray ul{
+	background: #F2F2F2;
+	}
+.menu_lvl1 a, .menu_lvl2 a, .menu_lvl3 a, .menu_lvl4 a,
+.menu_lvl5 a, .menu_lvl6 a, .menu_lvl7 a {
+	text-decoration:none;
+	line-height:1.6em;
+	display:block;
+	color:black;
+	padding-left:0.1em;
+	}
+.menu_lvl1 a:Hover, .menu_lvl2 a:Hover, .menu_lvl3 a:Hover, .menu_lvl4 a:Hover,
+.menu_lvl5 a:Hover, .menu_lvl6 a:Hover, .menu_lvl7 a:Hover{
+	text-decoration: underline;
+	}
+.menulvl_1_cur {
+	background-color: #FFDC00;
+	}
+.menulvl_2_cur, .menulvl_3_cur, .menulvl_4_cur,
+.menulvl_5_cur, .menulvl_6_cur, .menulvl_7_cur {
+	background-color: #FFDC00;
+	background-image: url(images/menuPile.gif);
+	background-repeat: no-repeat;
+	}
+.menu_lvl2 .menulvl_2_cur, .menu_lvl3 .menulvl_3_cur,
+.menu_lvl4 .menulvl_4_cur, .menu_lvl5 .menulvl_5_cur,
+.menu_lvl6 .menulvl_6_cur, .menu_lvl7 .menulvl_7_cur{
+	font-weight: bold;
+	}
+.menu_lvl1 .menulvl_1_act{
+	background-color: #000;
+	color: #FFDC00;
+	border-bottom: 0px solid #F2F2F2; /** marginal mellan **/
+	}
+.menu_lvl1 .menulvl_2_act, .menu_lvl1 .menulvl_3_act, .menu_lvl1 .menulvl_4_act, 
+.menu_lvl1 .menulvl_5_act, .menu_lvl1 .menulvl_6_act, .menu_lvl1 .menulvl_7_act{
+	background-color: #000;
+	color: #FFDC00;
+	margin-left: 0px; /** vänster marginal **/
+	display: block;
+	}
+.menu_lvl1 a, .menu_lvl1 .menulvl_1_cur .menuPadding{ 
+	font-weight:bold;
+	}
+.menu_lvl2 a, .menu_lvl2 .menuPadding { 
+	font-weight:normal; 
+	padding-left:0.5em;
+	}
+.menu_lvl3 a, .menu_lvl3 .menuPadding, .menu_lvl2 .menulvl_2_cur .menuPadding{ 
+	padding-left:1em;
+	}
+.menu_lvl4 a, .menu_lvl4 .menuPadding, .menu_lvl3 .menulvl_3_cur .menuPadding{ 
+	padding-left:1.5em;
+	}
+.menu_lvl5 a, .menu_lvl5 .menuPadding, .menu_lvl4 .menulvl_4_cur .menuPadding{ 
+	padding-left:2em;
+	}
+.menu_lvl6 a, .menu_lvl6 .menuPadding, .menu_lvl5 .menulvl_5_cur .menuPadding{ 
+	padding-left:2.5em;
+	}
+.menu_lvl7 a, .menu_lvl7 .menuPadding, .menu_lvl6 .menulvl_6_cur .menuPadding{ 
+	padding-left:3em;
+	}
+	
+.cursorPointer{
+	cursor: pointer;
+	}
+
+/***** SET HTML TAG FORMATTING *****/
+h1,h2,h3,h4,h5,h6 {						/*Heading 1-6*/
+	font-size:2em; 
+	font-weight:900; 
+	margin-top: 2em;
+	margin-bottom: 0em;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif
+	}
+h2 {
+	font-size:1.7em;
+	margin-top: 1.7em;
+	margin-bottom: 0em;
+	}
+h3 {
+	font-size:1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+	}
+h4 {
+	font-size:1.3em;
+	margin-top: 1.3em;
+	margin-bottom: 0em;
+	}
+h5 {
+	font-size:1.1em; 
+	/*font-style:italic;*/
+	margin-top: 1.1em;
+	margin-bottom: 0em;
+	}
+h6 {
+	font-size:1.1em; 
+	font-style:italic;
+	margin-top: 1.1em;
+	margin-bottom: 0em;
+	}
+.bodytext, #mainContent ul{								/*Brödtextinställningar*/
+/*	margin-top: 1.3em;*/
+	margin-bottom: 1.3em;
+	}
+#mainContent ul li {						/*Punktlisteformat i mainContent*/
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	}
+#mainContent ol li {						/*Nummerlisteformat*/
+	list-style-position: inside;
+	list-style-type: decimal;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	}
+
+/***** START INDENTING LISTS AT SECOND LEVEL *****/
+#mainContent ol li ol, #mainContent ol li ul, #mainContent ul li ul, #mainContent ul li ol { 
+	padding-left:1em; 
+	}
+
+/***** LINK PAGELIST FIELDS, BUT DO IT SLICK *****/
+.ttpagelistfield a, .ttsubpagefield a, .linkedValuesTable th a {
+	text-decoration:none; color:#000; cursor: pointer;
+	}
+.ttpagelistfield a:Hover, .ttsubpagefield a:Hover { 
+	color: gray; 
+	}
+.linkedValuesTable th a {color:#fff;}
+.linkedValuesTable th.ttlabel {text-align:center;}
+/** FOOTER LINK **/
+#ft-center a{
+	text-decoration: none;
+	color: #808080;
+	}
+
+/***rightContent Format**/
+#rightContent{ /* alla inhåller */
+	font-size: 0.9em;
+	}
+#rightContent li{
+	list-style-position: inside;	
+	*list-style-position: outside;
+	}
+
+/**to remove default link border**/
+a img{
+	border: none;
+	}
+hr{
+	display: none;
+	}
+#ft{
+	*margin-top: 15px; /** margin between footer and main content (only for IE) **/
+	}
+/** Required for IE to get the footer in the bottom of browser page **/
+html, body, .tx-tentipifr-pi1 {
+	min-height: 100%;
+	height:100%;
+	width: 100%
+	}
+html>body .tx-tentipifr-pi1 {
+    height: auto; /*this undoes the IE hack, hiding it
+                    from IE using the child selector*/
+    }
+body{
+	text-align: left;
+	}
+.tx-tentipifr-pi1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+#doc3{
+	height: auto;
+	padding-bottom: 3em;
+	}
+#ft{
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	z-index:998;
+	}
+
+/*** link formatering **/
+#mainContent .bodytext a{
+	color: gray;
+	}
+#ft-left, #ft-center, #ft-right{
+	text-align: center;
+	}
+#ft-center .ttfield{margin: 0;}
+
+/*** restyle jquery tabs **/
+#tabs, #tabs ul {border:0px;margin:0px; clear:both;}
+.ui-widget-header { background:none; border-bottom:1px solid #aaa;}
+#mainContent #tabs ul.ui-tabs-nav li {
+	list-style:none;
+	margin-bottom:0px;
+}
+#tabs .ui-tabs-panel {border:1px solid #aaa;margin-left:3px;}
+
+#mainContent #tabs ul li a {
+	padding: 3px 5px;
+}
+#tabs .ui-tabs-panel {border:1px solid #aaa;margin-left:3px;}
+.ui-tabs .ui-tabs-panel {
+padding:0px;
+padding-left:15px;
+padding-right:15px;
+}
+#tabs .ui-tabs-panel {
+margin-left:0px;
+padding-top:1.4em;
+}
+.ui-tabs {padding:0px;}
+.ui-tabs .ui-tabs-nav {padding-left:0px;}
+.ui-widget { font-size:1em }
+
+/*fixing some default typo3 css/markups*/
+#hd-content .csc-textpic {
+	width:10px;
+	position: absolute;
+}

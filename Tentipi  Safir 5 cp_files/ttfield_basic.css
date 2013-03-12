@@ -1,0 +1,245 @@
+﻿/***
+ * ttfield basic styles
+ * Valid identifiers are:
+ * * ttfield - a general key available on all fields
+ * * ttrichfield, ttsinglefield, ttnumberfield, ttimagefiled, ttgroupfield, ttpagelistfield, ttsubpagefield - these are field type specific keys. Treated on the same hierarchial formatting level as ttfield.
+ * Keys available within/after the above two:
+ * * ttlabel - the label area. 
+ * * fieldContent - fields content area
+ * 
+ * Note also that all above are surrounded in the #FK# aka field key or current field.
+ */ 
+
+/*general formatting of ttfields*/
+.ttfield{ 
+	font-size:1em;
+	margin-bottom:1.2em;			/*>>>>>>>>1.2<<<<<<<<<*/
+	/*background-color:#FFE4E4;	*/		/*tillfälligt endast för att tydliggöra fältgränser*/ /**Ahmad:I removed it temporary **/
+/*	border:1px solid silver;*/			/*tillfälligt endast för att tydliggöra fältgränser - problemet är att linjen tar lite plats, vilket stökar till det*/
+	}
+.ttlabel { 
+	font-weight: 900;
+	font-size: 1.4em;
+	}
+
+/*field specific styles relative to .ttfield setup*/
+.ttrichfield {
+	/*font-size:1.3em; /*<- uncomment to see how it is relative to .ttfield.. **/
+	line-height: 1.3em;
+	/*border-top:1px dashed silver; */
+	}
+.ttpagelistfield {
+	/*border-right:1px dotted gray;*/
+	}
+	
+.ttsumupfield {
+	/*border-left:1px dotted blue;*/}
+
+/* example of custom label style for richtext fields
+ * font size is relative to .ttrichfield which is relative to .ttfield which is relative to ttfield*/
+ /*
+.ttrichfield .ttlabel { 
+	font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif;
+	font-size:1.4em; 
+	margin-bottom: 1em;
+	}
+*/
+.ttfieldSpecial_ID11 .ttrichfield .ttlabel {
+	margin-bottom: 0; /** för att få top heading i toppage**/
+	}
+/******Ahmads ändring*****/
+#mainContent .publicationBlock ul{
+	margin-bottom: 1.3em;
+	}
+#mainContent .publicationBlock ul li {
+	background-image: url(images/pagelist-listStyle.gif);
+	background-repeat: no-repeat;
+	display: inline;
+	padding-left: 9px;
+	list-style-type: none;
+	}
+/** Banner's image **/
+#custom-doc .ttfieldSpecial_ID92{
+	border-bottom: 4px solid #FFDC00;
+	margin-bottom: 1.2em; 
+	}
+#custom-doc #mainContent .ttfieldSpecial_ID92{
+	border-bottom: 0px;
+	margin-bottom: 0em; 
+	}
+.ttfieldSpecial_ID92 .ttfield{
+	margin-bottom: 0px;
+	}
+.ttpagelistfield .ttfieldSpecial_ID11 .ttfield, .ttsubpagefield .ttfieldSpecial_ID11 .ttfield{
+	font-size: 0.75em;
+	/** här du kan styra heading storlek under pagelistor och subpagefält om vi vill hå den mindre den 90% av vanligt heading**/
+	}
+
+/*** PAGELISTOR OCH SUBPAGEFÄLT FORMATERING ***/
+.publicationBlock {
+      clear:both; 
+      border-top:1px solid silver; 
+      padding-top: 0.5em; 
+      margin-bottom: 0em;
+      }
+.publicationBlock .ttfield{
+      margin-bottom: 0.5em;
+      }
+.publicationBlock .bodytext, .publicationBlock  #mainContent ul{								/*Brödtextinställningar*/
+	margin-bottom: 0.3em;
+	}
+.ttsubpagefield, .ttpagelistfield, .ttsubpagefield .ttfield, .ttpagelistfield .ttfield{
+/*	background-color: #BCDBF0;*/  /**pagelistor och subpagefält med ljusblå bgcolor**/
+	}
+.publicationBlock, .publicationBlock .ttfield{
+	font-size: 0.9em; /**ttpagelistfield och ttsubpagefields innehåller är 90% av övrigt innehåller**/
+	}
+.publicationBlock .ttfieldSpecial_ID26 .ttimagefield{
+	margin: 0;
+	}
+.ttfieldSpecial_ID11 .ttrichfield .fieldContent .bodytext,
+.publicationBlock .ttfieldSpecial_ID11 .ttfield,
+.publicationBlock .ttrichfield .ttlabel{
+margin-bottom: 0;
+}
+
+/** margin-top for "Image-Main (separated by lang)" **/
+.ttfieldSpecial_ID313 .fieldContent img{
+	margin-top: 1.3em; 
+	}
+/** margin-top for "Image-Main (separated by lang) for  pagelistfield and subpagelistfield**/
+.publicationBlock .ttfieldSpecial_ID313 .fieldContent img{
+	margin-top: 0;
+	}
+.ttfieldSpecial_ID315 .ttfield{
+margin-bottom: 0.4em;
+}
+/**heading**/
+.ttfieldSpecial_ID11 .ttfield{
+margin-bottom: -0.3em;
+}
+.ttfieldSpecial_ID315 .ttfield .fieldContent{
+	text-align: right;
+	color: silver;
+	}
+	
+/** för att få header, formerly called .. i samma rad **/
+.ttfieldSpecial_ID11 .ttrichfield .fieldContent .bodytext, 
+.ttfieldSpecial_ID66 .ttsinglefield{
+	float: left;
+	padding-right: 0.5em;
+	margin-bottom:0.2em;
+	}
+.ttfieldSpecial_ID11,
+.ttfieldSpecial_ID66 .ttsinglefield .fieldContent, 
+.ttfieldSpecial_ID66 .ttsinglefield  .ttlabel{
+	display: inline;
+	}
+.ttfieldSpecial_ID310 .ttimagefield .fieldContent,
+.ttfieldSpecial_ID26 .ttimagefield .fieldContent{
+	float: right;
+	}
+.ttfieldSpecial_ID310 .ttimagefield .fieldContent img,
+.ttfieldSpecial_ID26 .ttimagefield .fieldContent img{
+	padding-right: 1px; /** marginal mellan bollar */
+	}
+.ttfieldSpecial_ID310 .ttimagefield .fieldContent{
+	*width: 100px;
+	*text-align: right;
+	/***for att få bollar i samma rad i IE***/
+	}
+.publicationBlock .ttfieldSpecial_ID315 .fieldContent{
+	text-align: right;
+	}
+.ttfieldSpecial_ID66 .ttsinglefield .fieldContent, .ttfieldSpecial_ID66 .ttsinglefield  .ttlabel{
+	font-size: 0.9em;
+	font-weight: normal;
+	}
+.ttfieldSpecial_ID66 .ttsinglefield .fieldContent{
+	*padding-left: 0.3em;
+	}
+.ttfieldSpecial_ID14,
+.linkedValuesTable,
+.ttfieldSpecial_ID17,
+.ttfieldSpecial_ID18,
+.ttfieldSpecial_ID15 .fieldContent,
+.ttfieldSpecial_ID313 .fieldContent{
+	clear: both;
+	margin-top: 1.2 em;
+	*margin-top: 0px;
+	}
+
+/*** Formatering för tabeller****/
+.linkedValuesTable{
+	width: 100%;
+	font-size: 0.9em;
+	border: 1px solid #999;
+	border-collapse: separate;
+	*border-collapse:collapse;
+	}
+.linkedValuesTable tbody tr .firstColumn, .linkedValuesTable th{
+	color: white;
+	background-color: #999;
+	padding: 0.3em 0.5em;
+	}
+.linkedValuesTable th{
+	border-bottom:4px solid #FFDC00;
+	}
+.linkedValuesTable .tableRowCell .ttlabel{
+	background-color: #FFF;
+	}
+.linkedValuesTable .tableRowCell{
+	/*padding: 0.3em 0.5em 0.3em 0.5em;*/
+	}
+.linkedValuesTable .tableDividerTR td{
+	padding-left: 50px;
+	padding-right: 5px;
+	*padding-top: 2px;
+	*padding-bottom: 2px;
+	background-color: #f2f2f2;
+	color: #999999;
+	font-weight: bold;
+	font-size: 1em;
+	}
+.linkedValuesTable .tableRowCell{
+	text-align: center;
+	}
+
+.linkedValuesTable .ttlabel{
+	text-align: left;
+	font-size: 1em;
+	}
+.linkedValuesTable td{
+	border: 1px solid #f2f2f2;	
+	}
+.linkedValuesTable .firstColumn{
+	width:140px;
+	}
+	
+.linkedValuesTable tbody .ttlabel{
+	padding: 0;
+	}
+/**image explanation border**/
+.ttfieldSpecial_ID312{
+	clear: both;
+	border: 1px solid silver;
+	padding-right: 10px;
+	}
+.ttfieldSpecial_ID312 .publicationBlock{
+	border: none;
+	}
+	
+/*** rightContent****/
+#rightContent .ttlabel,  /* header format*/
+#rightContent .ttrichfield .ttlabel {
+	font-size:1em;
+	}
+/** just for "Inluded and Optinal accessories" **/
+#rightContent .ttfieldSpecial_ID32 li, #rightContent .ttfieldSpecial_ID33 li{
+	padding-left: 9px;
+	background-image:url(images/pagelist-listStyle.gif);
+	background-repeat:no-repeat;
+	}
+.ttsubpagefield{
+	border-bottom: 1px solid silver; /* linje under subpagefältet*/
+}

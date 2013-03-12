@@ -1,0 +1,29 @@
+#isslideshow img { display: none }
+#isslideshow img.first { display: block }.socialMedias {
+  width: 168px;
+  margin:3px;
+  float:left;
+}
+#topContent {
+width:380px;
+}
+#topContent .tx-srlanguagemenu-pi1 {
+    border-left: 1px solid gray;
+    float: right;
+    height: 37px;
+    padding-left: 20px;
+    padding-top: 7px;
+    width: 171px;
+}
+.socialMedias ul, .socialMedias ul li {
+  margin:0;
+  padding:0;
+}
+.socialMedias li {
+  list-style: none;
+  float: left;
+  margin-right:10px;
+}
+.socialMedias img {
+  border: 0;
+}

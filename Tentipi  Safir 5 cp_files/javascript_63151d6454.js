@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.isslideshow').cycle({fx:'fade'});$('.isslideshow').each(function(){$(this).css('height',$(this).children('img:first').css('height'));$(this).css('width',$(this).children('img:first').css('width'));});$('.isslideshow').css('overflow','hidden');});
